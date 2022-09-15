@@ -2,7 +2,7 @@
 What? You don't even know that except for ETH, USDT, WBTC and all other tokens you hold have the same amount of fork candies on the ETHPOW chain!
 Come to https://www.ethwswap.org. Let's see how to get the candies.
 
-FAQ
+## FAQ
 
 (1) What? You don't even know that except for ETH, USDT, WBTC and all other tokens you hold have the same amount of fork candies on the ETHPOW chain!
 After the launch of ETHPOW fork chain, according to the tokens you hold on ETH mainnet, your wallet address will automatically have the same number of USDT (or any other cryptocurrencies such as USDC, DAI, WBTC…) in the ETHPOW chain.
