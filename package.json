@@ -1,0 +1,16 @@
+{
+  "name": "EthwSwap",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx hardhat compile",
+    "deploy rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.1"
+  }
+}

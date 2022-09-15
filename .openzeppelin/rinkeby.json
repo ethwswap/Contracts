@@ -1,0 +1,663 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xF6C73270f87F9D981Faf2F30CeD40363E5C3f62f",
+    "txHash": "0x2f325993438bd932ab04189d7f135e794c1cb5161990e1f229a95e7bc811a8c5"
+  },
+  "proxies": [
+    {
+      "address": "0x7C17563e676089af4768f8b0e1eC49EA5b92D603",
+      "txHash": "0x2b56e56ace2887804ab57a5af504d23a9ff0c478f66fcc3714cf98b7ac66c808",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6bFAF9D337693daa5B0A133fc7B75f254d0787e4",
+      "txHash": "0x7259ba357df128362a0762b82c3f30ae24519f5da18e489e4e9f5be733a916af",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x537b95280Ce749775b560ebE843f0De75AA8780C",
+      "txHash": "0xfaffa76ec2c7e01447030a46c674a2ae786e88dfccca89f4c790c6aa2f797330",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xaA8c00558c67a9F2F361B7554Bcc2c97328DFaF9",
+      "txHash": "0xb3a000c58a4d709b3b642c8e9a5508eccc92fccdab79b8ab194cce3ae451668e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xF7f94360CbDCfcf9a939bED5e8291FD68B3F5436",
+      "txHash": "0x86c3825eaa2d810880fdc6195121bd7bc3d129c56e6678ed7530bf60f40d6338",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "5664a2b50249fa1cdb90122b9a7973fe34a0f6a4e8aa419b4575d719d55c4ea7": {
+      "address": "0xB9B905DAE2F38DaC04CbDf699A29439EaeD01099",
+      "txHash": "0x7de040aa5cce1df360cb2b17661845b707eb7164c52d193a017ef44449f07977",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "feeRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:26"
+          },
+          {
+            "label": "feeReceiver",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:28"
+          },
+          {
+            "label": "tradingFeesV3",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint24)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:31"
+          },
+          {
+            "label": "whiteListTokens",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint24)dyn_storage": {
+            "label": "uint24[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "f3c788f2881e84c4561eb44c5de2af456ffa9e2242362f80a890cc01a26570f8": {
+      "address": "0xd433a68176f45378B027EA8b2e2deAf7775e4b7e",
+      "txHash": "0x9540f4e71419b2b0168abb41cdfc98fc4520901bd27c1ea4babe17884710cf7a",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_array(t_uint256)48_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "feeRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:26"
+          },
+          {
+            "label": "feeReceiver",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:28"
+          },
+          {
+            "label": "tradingFeesV3",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint24)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:31"
+          },
+          {
+            "label": "whiteListTokens",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint24)dyn_storage": {
+            "label": "uint24[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)48_storage": {
+            "label": "uint256[48]",
+            "numberOfBytes": "1536"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "ec14e96612d5637e48f5e8dab210ff35de08d3ce1c0a97534e36996e37f2ab73": {
+      "address": "0x573518269Fd0adCF6e36e0CF760c89B498F5E5fc",
+      "txHash": "0xb55ba119b174bdc00284f79674f401741e5b75e6b8e0fb840c37e00971f2e22c",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_array(t_uint256)48_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "feeRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:26"
+          },
+          {
+            "label": "feeReceiver",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:28"
+          },
+          {
+            "label": "tradingFeesV3",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint24)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:31"
+          },
+          {
+            "label": "whiteListTokens",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint24)dyn_storage": {
+            "label": "uint24[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)48_storage": {
+            "label": "uint256[48]",
+            "numberOfBytes": "1536"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e9d311572bc3021d7f372c43293fa53351378d600e9c11e60798c644be96b593": {
+      "address": "0x3AE5231C2244fF10F48e09c743442413Ed2CE6a6",
+      "txHash": "0x5e29b621b9939dd0307ec6d6664d444209ab57e11fafaae055d61fa490d22f0e",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_array(t_uint256)48_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "feeRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:25"
+          },
+          {
+            "label": "feeReceiver",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:27"
+          },
+          {
+            "label": "tradingFeesV3",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint24)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:30"
+          },
+          {
+            "label": "whiteListTokens",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:33"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint24)dyn_storage": {
+            "label": "uint24[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)48_storage": {
+            "label": "uint256[48]",
+            "numberOfBytes": "1536"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bb4e8df7017249050bba7a606e19e923ab6b3f0715b037143f92a41a1a2c372d": {
+      "address": "0x031c046EE547728AaA18C611019C656a75174012",
+      "txHash": "0xce125d8f1d38cf012b4b83a604c560d9ffe50e7939ed627ae118b4ab6839545a",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_array(t_uint256)48_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "feeRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:25"
+          },
+          {
+            "label": "feeReceiver",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:27"
+          },
+          {
+            "label": "tradingFeesV3",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint24)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:30"
+          },
+          {
+            "label": "whiteListTokens",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ETHWSwap",
+            "src": "contracts/ETHWSwap.sol:33"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint24)dyn_storage": {
+            "label": "uint24[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)48_storage": {
+            "label": "uint256[48]",
+            "numberOfBytes": "1536"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
